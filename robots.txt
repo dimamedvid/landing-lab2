@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dimamedvid.github.io/landing-lab2/sitemap.xml
