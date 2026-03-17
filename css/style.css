@@ -128,6 +128,10 @@ header .site-title {
   object-fit: contain;
 }
 
+main section {
+    background-color: #f1f1f1;
+}
+
 section h2 {
   position: relative;
   letter-spacing: 0.02em;
@@ -156,6 +160,12 @@ section h2::after {
     height: 100%;
     object-fit: cover;
   }
+
+footer {
+  background: linear-gradient(90deg, #5977ff 0%, #518eff 100%);
+  text-align: center;
+  padding: 1.2rem 0;
+}
 
 @media (min-width: 1600px) {
   .container { max-width: 1400px; }
