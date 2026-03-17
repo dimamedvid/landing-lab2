@@ -144,6 +144,18 @@ section h2::after {
   background: #212121;
 }
 
+ .demo__wrapper {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-auto-rows: 280px;
+    gap: 5px;
+ }
+
+  .demo__wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 @media (min-width: 1600px) {
   .container { max-width: 1400px; }
@@ -173,6 +185,10 @@ section h2::after {
   .container { padding: 0 0.6rem; }
   section { padding: 0.8rem 0; }
   section h2 { font-size: 1rem; }
+    .demo__wrapper {
+    display: block;
+    gap: 5px;
+ }
 }
 
 @media (max-width: 380px) {
