@@ -128,6 +128,23 @@ header .site-title {
   object-fit: contain;
 }
 
+section h2 {
+  position: relative;
+  letter-spacing: 0.02em;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.11em;
+  left: 0;
+  width: 3.33em;
+  height: 0.11em;
+  background: #212121;
+}
+
+
 @media (min-width: 1600px) {
   .container { max-width: 1400px; }
   .header__row img { width: 260px; }
@@ -144,7 +161,6 @@ header .site-title {
 }
 
 @media (max-width: 991px) {
-  /* Stack header rows for narrow screens */
   .header__row { flex-direction: column; align-items: flex-start; gap: .6rem; }
   header { padding: 1.2rem 0; height: auto; max-height: none; }
   .header__row img { width: 140px; }
